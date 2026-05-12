@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="oasis_background">#0D0D0D</color>
+    <color name="oasis_surface">#161616</color>
+    <color name="oasis_surface_variant">#1E1E1E</color>
+    <color name="oasis_outline">#14FFFFFF</color>
+    <color name="oasis_purple">#7C6EF5</color>
+    <color name="oasis_purple_dark">#6A5CE0</color>
+    <color name="oasis_text_primary">#F0EEFF</color>
+    <color name="oasis_text_secondary">#80FFFFFF</color>
+    <color name="oasis_text_muted">#59FFFFFF</color>
+    <color name="oasis_danger">#E24B4A</color>
+    <color name="oasis_avatar_bg">#2A2742</color>
+    <color name="oasis_avatar_text">#9D93F7</color>
+    <color name="oasis_stat_value">#D6D0FF</color>
+    <color name="oasis_danger_outline">#66E24B4A</color>
+
+    <!-- Backward-compatible aliases used by existing Kotlin code and drawables. -->
+    <color name="oasis_nav">#111111</color>
+    <color name="oasis_card">@color/oasis_surface</color>
+    <color name="oasis_field">@color/oasis_surface_variant</color>
+    <color name="oasis_border">@color/oasis_outline</color>
+    <color name="oasis_primary">@color/oasis_purple</color>
+    <color name="oasis_primary_soft">@color/oasis_avatar_text</color>
+    <color name="oasis_text">@color/oasis_text_primary</color>
+    <color name="oasis_muted">@color/oasis_text_secondary</color>
+    <color name="oasis_label">@color/oasis_text_muted</color>
+</resources>

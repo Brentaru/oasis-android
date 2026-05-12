@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oasis_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:contentDescription="Oasis"
+        android:src="@drawable/ic_oasis_mark" />
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Oasis"
+        android:textColor="@color/oasis_purple"
+        android:textSize="44sp" />
+</LinearLayout>

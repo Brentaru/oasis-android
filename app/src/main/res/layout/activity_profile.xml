@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oasis_background"
+    android:orientation="vertical"
+    tools:context=".screens.profile.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="80dp">
+
+            <TextView
+                style="@style/OasisFieldLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reader account"
+                android:textColor="@color/oasis_purple" />
+
+            <TextView
+                style="@style/OasisPageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Profile" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Tune your Oasis reading space and account access."
+                android:textColor="@color/oasis_text_secondary"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_oasis_card"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <FrameLayout
+                    android:layout_width="84dp"
+                    android:layout_height="84dp">
+
+                    <TextView
+                        android:id="@+id/textviewAvatar"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_oasis_avatar"
+                        android:gravity="center"
+                        android:text="O"
+                        android:textColor="@color/oasis_avatar_text"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/imageviewProfilePhoto"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_oasis_avatar"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/buttonChangePhoto"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="bottom|end"
+                        android:background="@drawable/bg_oasis_primary"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:padding="0dp"
+                        android:text="+"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textviewDisplayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Oasis Reader"
+                    android:textColor="@color/oasis_text_primary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textviewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:textColor="@color/oasis_text_muted"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="62dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_oasis_field"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Saved"
+                            android:textAllCaps="true"
+                            android:textColor="@color/oasis_text_muted"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Library"
+                            android:textColor="@color/oasis_stat_value"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_oasis_field"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reading"
+                            android:textAllCaps="true"
+                            android:textColor="@color/oasis_text_muted"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Synced"
+                            android:textColor="@color/oasis_stat_value"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_oasis_field"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mode"
+                            android:textAllCaps="true"
+                            android:textColor="@color/oasis_text_muted"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Page"
+                            android:textColor="@color/oasis_stat_value"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_oasis_card"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/OasisSectionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Account details" />
+
+                <TextView
+                    style="@style/OasisFieldLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Display name" />
+
+                <EditText
+                    android:id="@+id/edittextUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_oasis_field"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/oasis_text_primary"
+                    android:textColorHint="@color/oasis_text_muted"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/OasisFieldLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Email" />
+
+                <EditText
+                    android:id="@+id/edittextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_oasis_field"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/oasis_text_primary"
+                    android:textColorHint="@color/oasis_text_muted"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edittextFirstname"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edittextLastname"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/buttonEditSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_oasis_primary"
+                    android:text="Save profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_oasis_card"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/OasisSectionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Security" />
+
+                <TextView
+                    style="@style/OasisFieldLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Current password" />
+
+                <EditText
+                    android:id="@+id/edittextCurrentPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_oasis_field"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/oasis_text_primary"
+                    android:textColorHint="@color/oasis_text_muted"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/OasisFieldLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="New password" />
+
+                <EditText
+                    android:id="@+id/edittextNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_oasis_field"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/oasis_text_primary"
+                    android:textColorHint="@color/oasis_text_muted"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/OasisFieldLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Confirm password" />
+
+                <EditText
+                    android:id="@+id/edittextConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_oasis_field"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/oasis_text_primary"
+                    android:textColorHint="@color/oasis_text_muted"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/buttonChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_oasis_primary"
+                    android:text="Change password"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_oasis_danger"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danger zone"
+                    android:textAllCaps="true"
+                    android:textColor="@color/oasis_danger"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Delete your Oasis account and return to the welcome screen."
+                    android:textColor="@color/oasis_text_muted"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/buttonDeleteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/bg_oasis_danger"
+                    android:text="Delete account"
+                    android:textAllCaps="false"
+                    android:textColor="@color/oasis_danger"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/oasis_outline" />
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/oasis_surface"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/navHomeIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_home" />
+
+            <TextView
+                android:id="@+id/navHomeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Home"
+                android:textColor="@color/oasis_text_secondary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navLibrary"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/navLibraryIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_library" />
+
+            <TextView
+                android:id="@+id/navLibraryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Library"
+                android:textColor="@color/oasis_text_secondary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navBrowse"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/navBrowseIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_browse" />
+
+            <TextView
+                android:id="@+id/navBrowseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Browse"
+                android:textColor="@color/oasis_text_secondary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/navProfileIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_profile_active" />
+
+            <TextView
+                android:id="@+id/navProfileLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Profile"
+                android:textColor="@color/oasis_purple"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Oasis" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowBackground">@color/oasis_background</item>
+        <item name="android:navigationBarColor">@color/oasis_surface</item>
+        <item name="android:statusBarColor">@color/oasis_background</item>
+        <item name="android:textColorPrimary">@color/oasis_text_primary</item>
+        <item name="android:textColorSecondary">@color/oasis_text_secondary</item>
+        <item name="android:colorAccent">@color/oasis_purple</item>
+        <item name="colorPrimary">@color/oasis_purple</item>
+        <item name="colorSecondary">@color/oasis_purple</item>
+        <item name="colorSurface">@color/oasis_surface</item>
+        <item name="android:colorBackground">@color/oasis_background</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSurface">@color/oasis_text_primary</item>
+        <item name="colorOnBackground">@color/oasis_text_primary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="Theme.Oasis" parent="Base.Theme.Oasis" />
+</resources>

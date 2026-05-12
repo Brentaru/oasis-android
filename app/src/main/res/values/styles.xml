@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="OasisPageTitle">
+        <item name="android:textColor">@color/oasis_text_primary</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="OasisSectionTitle">
+        <item name="android:textColor">@color/oasis_text_secondary</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="OasisFieldLabel">
+        <item name="android:textColor">@color/oasis_text_muted</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

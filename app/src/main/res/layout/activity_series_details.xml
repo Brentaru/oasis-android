@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oasis_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_oasis_ghost"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:text="Back"
+            android:textColor="@color/oasis_text_secondary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textColor="@color/oasis_text_primary"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textviewMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/oasis_text_secondary"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/imageviewCover"
+            android:layout_width="170dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_oasis_card"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textviewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_oasis_card"
+            android:lineSpacingExtra="4dp"
+            android:padding="18dp"
+            android:textColor="@color/oasis_text_secondary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_oasis_ghost"
+            android:text="Save to Library"
+            android:textAllCaps="false"
+            android:textColor="@color/oasis_text_primary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonRead"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_oasis_primary"
+            android:text="Read first chapter"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textviewChapterState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Loading chapters..."
+            android:textColor="@color/oasis_text_muted"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/chapterList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+</ScrollView>
